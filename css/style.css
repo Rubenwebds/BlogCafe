@@ -244,3 +244,58 @@ margin-top: 4rem;
 
 }
 
+
+
+/* Sobre nosotros */ 
+  
+@media (min-width: 768px){
+  .sobre-nosotros{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 2rem;
+  }
+}
+
+
+
+
+/* Cursos */
+
+.cursos {
+  border-bottom: 1px solid var(--gris);
+  padding-bottom: 1rem;
+}
+
+
+@media (min-width: 768px){
+  .cursos{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    padding-top: 2rem;
+  }
+    
+}
+
+.curso__texto {
+  font-family: var(--fuenteHeading);
+  font-weight: bold;
+  
+}
+
+.cursos__label {
+  font-weight: normal;
+}
+
+
+
+.cursos:last-of-type {
+  border: none;
+  margin-bottom: 0;
+}
+
+.curso__texto, .curso__label {
+  font-size: 2rem;
+}
+
+
