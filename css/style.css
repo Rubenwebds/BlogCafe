@@ -187,6 +187,10 @@ img {
   
 }
 
+.boton:hover{
+  cursor: pointer;
+}
+
 @media (min-width: 768px){
   .boton {
     display: inline-block; /* Respeta el width y el margin */
@@ -270,7 +274,6 @@ margin-top: 4rem;
 @media (min-width: 768px){
   .cursos{
     display: grid;
-    grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
     padding-top: 2rem;
   }
@@ -298,4 +301,57 @@ margin-top: 4rem;
   font-size: 2rem;
 }
 
+
+/* contacto */
+
+.contacto-bg {
+  background-image: url(/img/contacto.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width:95%;
+ border-radius: 1rem;
+ padding: 5rem;
+
+}
+
+@media (min-width: 786px){
+  .campo{
+    display: flex;
+    gap:2rem;
+  
+  }
+    
+}
+
+
+
+.campo__label {
+  flex: 0 0 9rem; /* Factor de crecimiento 0, 2do No peque;o y la base 9 rem */
+text-align: right;
+gap: 2rem;
+}
+
+.campo__field {
+  flex: 1; /* Factor crecimiento 1, toma el resto y se adapta */
+  border: 1px solid var(--gris);
+
+}
+
+.campo__field--textarea {
+  height:10rem ;
+
+}
+
+@media (min-width:786px){
+  .btn {
+  margin-top: 1rem ;
+  }
+  
+}
 
